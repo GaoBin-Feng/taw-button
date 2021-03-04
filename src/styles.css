@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+}
+
+#button-container { 
+    padding: 40px;
+    position: absolute;
+    transition: all .15s ease-in-out;
+}
+
+#button {
+    background-color: #0096FF;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1), 
+                0 2px 4px rgba(0,0,0,0.1), 
+                0 4px 8px rgba(0,0,0,0.1), 
+                0 8px 16px rgba(0,0,0,0.1);
+    color: #F9F9F9;
+    font-size: 140%;
+    padding: 0.7em 1.7em;
+}
+
+#button:focus {
+    outline: 0;
+}
+
+.celebrate {
+    animation: strobe 2s ease-in-out 0s 1;
+}
+
+@keyframes strobe {
+      0% { background-color: #FFFFFF; }
+     15% { background-color: #F14472; }
+     30% { background-color: #F17DB6; }
+     45% { background-color: #FED40C; }
+     60% { background-color: #B8C500; }
+     75% { background-color: #85AF4B; }
+    100% { background-color: #FFFFFF; }
+}
